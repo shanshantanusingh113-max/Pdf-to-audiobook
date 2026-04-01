@@ -1,0 +1,21 @@
+# PDF to Audiobook - Requirements
+# Install all: pip install -r requirements.txt
+
+# ── PDF Extraction ──────────────────────────
+pdfplumber>=0.10.0        # Recommended: better text extraction
+pypdf>=4.0.0              # Fallback PDF reader
+
+# ── TTS Engines (choose one or more) ────────
+pyttsx3>=2.90             # Offline TTS (no internet needed)
+gTTS>=2.4.0               # Google TTS (requires internet)
+edge-tts>=6.1.9           # Microsoft Edge TTS (requires internet, best quality)
+
+# ── Audio Processing ─────────────────────────
+pydub>=0.25.1             # Audio merging & format conversion
+# ffmpeg must also be installed on your system:
+#   Ubuntu/Debian: sudo apt install ffmpeg
+#   macOS:         brew install ffmpeg
+#   Windows:       https://ffmpeg.org/download.html
+
+# ── Optional: for better text cleanup ────────
+# chardet>=5.0.0          # Encoding detection

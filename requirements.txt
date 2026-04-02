@@ -19,3 +19,4 @@ pydub>=0.25.1             # Audio merging & format conversion
 
 # ── Optional: for better text cleanup ────────
 # chardet>=5.0.0          # Encoding detection
+streamlit
